@@ -15,20 +15,20 @@ $mail->isSMTP();
 // 1 = client messages
 // 2 = client and server messages
 $mail->SMTPDebug   = 2;
-$mail->DKIM_domain = '127.0.0.1';
+//$mail->DKIM_domain = '127.0.0.1';
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host        = "smtpout.secureserver.net";
+$mail->Host        = "localhost";
 //Set the SMTP port number - likely to be 25, 465 or 587
-$mail->Port        = 465;
+$mail->Port        = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth    = true;
 //Username to use for SMTP authentication
 $mail->Username    = "care@daisysalons.com";
 //Password to use for SMTP authentication
 $mail->Password    = "Miku2468";
-$mail->SMTPSecure  = 'ssl';
+$mail->SMTPSecure  = 'tls';
 //Set who the message is to be sent from
 $mail->setFrom($_POST['email'], 'First Last');
 //Set an alternative reply-to address
