@@ -1,42 +1,48 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'care@daisysalons.com';
+//SMTP needs accurate times, and the PHP time zone MUST be set
+//This should be done in your php.ini, but this is how to do it if you don't have access to that
+date_default_timezone_set('Etc/UTC');
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+require '../PHPMailerAutoload.php';
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['mobile'];
+//Create a new PHPMailer instance
+$mail = new PHPMailer();
+//Tell PHPMailer to use SMTP
+$mail->isSMTP();
+//Enable SMTP debugging
+// 0 = off (for production use)
+// 1 = client messages
+// 2 = client and server messages
+$mail->SMTPDebug   = 2;
+$mail->DKIM_domain = '127.0.0.1';
+//Ask for HTML-friendly debug output
+$mail->Debugoutput = 'html';
+//Set the hostname of the mail server
+$mail->Host        = "smtpout.secureserver.net";
+//Set the SMTP port number - likely to be 25, 465 or 587
+$mail->Port        = 465;
+//Whether to use SMTP authentication
+$mail->SMTPAuth    = true;
+//Username to use for SMTP authentication
+$mail->Username    = "care@daisysalons.com";
+//Password to use for SMTP authentication
+$mail->Password    = "Miku2468";
+$mail->SMTPSecure  = 'ssl';
+//Set who the message is to be sent from
+$mail->setFrom($_POST['email'], 'First Last');
+//Set an alternative reply-to address
+//$mail->addReplyTo('replyto@example.com', 'First Last');
+//Set who the message is to be sent to
+$mail->addAddress('daisys.parlour@gmail.com', 'Arjun');
+//Set the subject line
+$mail->Subject = 'PHPMailer SMTP test';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
 
-  $contact->smtp = array(
-    'host' => 'smtpout.secureserver.net',
-    'username' => 'care@daisysalons.com',
-    'password' => 'Miku2468',
-    'port' => '465'
-  );
- 
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['mobile'], 'Mobile');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+//send the message, check for errors
+if (!$mail->send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message sent!";
+}
 ?>
