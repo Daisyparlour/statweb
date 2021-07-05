@@ -1530,15 +1530,15 @@ section {
   margin-top: 40px;
 }
 
-.contact .emailform {
+.contact .php-email-form {
   width: 100%;
 }
 
-.contact .emailform .form-group {
+.contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .emailform .validate {
+.contact .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1546,7 +1546,7 @@ section {
   font-size: 13px;
 }
 
-.contact .emailform .error-message {
+.contact .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1555,7 +1555,7 @@ section {
   font-weight: 600;
 }
 
-.contact .emailform .sent-message {
+.contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1564,13 +1564,13 @@ section {
   font-weight: 600;
 }
 
-.contact .emailform .loading {
+.contact .php-email-form .loading {
   display: none;
   text-align: center;
   padding: 15px;
 }
 
-.contact .emailform .loading:before {
+.contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1583,7 +1583,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .emailform input, .contact .emailform textarea {
+.contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1592,31 +1592,31 @@ section {
   color: white;
 }
 
-.contact .emailform input::-webkit-input-placeholder, .contact .emailform textarea::-webkit-input-placeholder {
+.contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
   color: #a49b89;
 }
 
-.contact .emailform input::-moz-placeholder, .contact .emailform textarea::-moz-placeholder {
+.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.contact .emailform input::placeholder, .contact .emailform textarea::placeholder {
+.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
   color: #a49b89;
 }
 
-.contact .emailform input:focus, .contact .emailform textarea:focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #cda45e;
 }
 
-.contact .emailform input {
+.contact .php-email-form input {
   height: 44px;
 }
 
-.contact .emailform textarea {
+.contact .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .emailform button[type="submit"] {
+.contact .php-email-form button[type="submit"] {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
@@ -1625,7 +1625,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .emailform button[type="submit"]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #d3af71;
 }
 
