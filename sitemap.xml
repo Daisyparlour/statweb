@@ -2,58 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://daisysalons.com/</loc>
-    <lastmod>2021-07-04</lastmod>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#hero</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/index.html</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#about</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/about.html#about</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#skincare</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/skincare.html#skincare</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#facialcare</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/facialcare.html#facialcare</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#bodycare</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/bodycare.html#bodycare</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
    <url>
-    <loc>http://daisysalons.com/#haircare</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/haircare.html#haircare</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
    <url>
-    <loc>http://daisysalons.com/#makeup</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/makeup.html#makeup</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#ayush</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/ayush.html#ayush</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#therapy</loc>
-    <lastmod>2021-07-04</lastmod>
+    <loc>http://daisysalons.com/therapy.html#therapy</loc>
+    <lastmod>2021-09-12</lastmod>
+  </url>  
+  <url>
+    <loc>http://daisysalons.com/gallery.html#gallery</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
-    <loc>http://daisysalons.com/#beauties</loc>
-    <lastmod>2021-07-04</lastmod>
-  </url>
-  <url>
-    <loc>http://daisysalons.com/#gallery</loc>
-    <lastmod>2021-07-04</lastmod>
-  </url>
-  <url>
-    <loc>http://daisysalons.com/#contact</loc>
-    <lastmod>2021-07-04</lastmod>
-  </url>
-    <url>
-    <loc>http://daisysalons.com/#appointment</loc>
-    <lastmod>2021-07-04</lastmod>
-  </url>
+    <loc>http://daisysalons.com/contact.html#contact</loc>
+    <lastmod>2021-09-12</lastmod>
+  </url>    
 </urlset>
